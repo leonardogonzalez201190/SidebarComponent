@@ -1,4 +1,8 @@
 
+.cursor-move {
+    cursor: move;
+}
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -19,7 +23,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: rgba(0, 0, 0, 0.877);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -50,6 +54,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    
 }
 
 .sidebar-nav li {
@@ -57,16 +62,17 @@
     line-height: 40px;
 }
 
-.sidebar-nav li a {
+.sidebar-nav a {
     display: block;
     text-decoration: none;
     color: #999999;
 }
 
-.sidebar-nav li a:hover {
+.sidebar-nav a:hover {
     text-decoration: none;
+    cursor: pointer;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.356);
 }
 
 .sidebar-nav li a:active,
@@ -78,6 +84,7 @@
     height: 65px;
     font-size: 18px;
     line-height: 60px;
+    
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -115,4 +122,8 @@
         position: relative;
         margin-right: 0;
     }
+}
+
+.font_ {
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
