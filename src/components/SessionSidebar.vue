@@ -9,7 +9,7 @@
     <input class="form-control form-control-sm" type="text" v-if="showInput" @keyup.13="increment" v-model="item_text" />
     <draggable v-model="items" @group="title" @start="drag=true" @end="drag=false">
       <div v-for="element in items" :key="element" class="item_session">
-        <a class="font_ text-justify mt-1 ml-5"><span :class="iconItem" class="text-secondary mb-2 mt-2"></span>
+        <a class="font_ text-justify mt-1 ml-5"><span :class="iconItem" class="mb-2 mt-2"></span>
          <span class="text-white"> {{element}}</span>
         </a>
       </div>
