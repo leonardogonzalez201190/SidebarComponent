@@ -1,6 +1,6 @@
 <template>
   <small>
-	  <ul>
+
     <h5 class="text-white cursor-move font_"><span :class="iconTitle"></span> {{title}}</h5>
 
 			<input class="form-control form-control-sm" type="text" v-if="showInput" @keyup.13="increment" v-model="item_text" />
@@ -13,7 +13,7 @@
 	 <button class="btn btn-outline-primary btn-sm mt-2" @click="showForm" :disabled="showInput">
 	 <span class="fa fa-plus"></span> ADD {{title}}
 	 </button>
-	</ul>
+	
   </small>
 </template>
 

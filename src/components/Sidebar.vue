@@ -8,7 +8,7 @@
               </a>
           </li>
     <draggable v-model="items" group="itemsSidebar" @start="drag=true" @end="drag=false">
-	    <div v-for="element in items" :key="element.title" class="div_session">
+	    <div v-for="element in items" :key="element.title" class="div_session text-center">
           <hr><SessionSidebar :title="element.title" :iconTitle="element.iconTitle" :iconItem="element.iconItem" />
       </div>
   </draggable>
