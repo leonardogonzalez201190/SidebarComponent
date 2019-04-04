@@ -3,7 +3,7 @@
     <div id="sidebar-wrapper">
       <div class="sidebar-nav">
         <li class="sidebar-brand brandup text-center">
-          <a href="#">
+          <a href="#" class="col-md-6">
             <h2><strong>TEK</strong>TASK</h2>
           </a>
         </li>

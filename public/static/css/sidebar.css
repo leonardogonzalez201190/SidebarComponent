@@ -15,9 +15,6 @@
     padding-left: 250px;
 }
 
-.item_session:not(hover), .icon_sidebar:{
-  color: #677c92;
-}
 
 .item_session:hover, .icon_sidebar:hover{
   color:  #fff !important;

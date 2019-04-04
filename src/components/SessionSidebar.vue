@@ -1,9 +1,9 @@
 <template>
   <small>
     <hr style="background: #374051;">
-      <h5 class="text-white cursor-move font_ text-justify ml-5">
-      <span class="text-secondary" :class="iconTitle"></span>
-       {{title}}</h5>
+      <p class="text-white cursor-move font_ text-justify ml-5 h6">
+        <span class="text-secondary" :class="iconTitle"></span>
+       {{title}}</p>
     <hr style="background: #374051;">
 
     <input class="form-control form-control-sm sm" type="text" v-if="showInput" @keyup.13="increment" v-model="item_text" />
