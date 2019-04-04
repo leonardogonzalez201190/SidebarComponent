@@ -1,13 +1,15 @@
 <template>
   <small>
     <hr style="background: #374051;">
-      <h5 class="text-white cursor-move font_ text-justify ml-5"><span :class="iconTitle"> {{title}}</span></h5>
+      <h5 class="text-white cursor-move font_ text-justify ml-5"><span class="icon_sidebar" :class="iconTitle"></span> {{title}}</h5>
     <hr style="background: #374051;">
 
     <input class="form-control form-control-sm sm" type="text" v-if="showInput" @keyup.13="increment" v-model="item_text" />
     <draggable v-model="items" @group="title" @start="drag=true" @end="drag=false">
       <div v-for="element in items" :key="element" class="item_session">
-        <a class="text-white font_ text-justify mt-1 ml-5"><span :class="iconItem"></span> {{element}}</a>
+        <a class="font_ text-justify mt-1 ml-5"><span :class="iconItem" class="icon_sidebar"></span>
+         <span class="text-white"> {{element}}</span>
+        </a>
       </div>
     </draggable>
     <p v-if="!items.length" class="text-secondary font_ text-justify ml-5">Empty list</p>
