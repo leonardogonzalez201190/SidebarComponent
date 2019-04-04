@@ -2,16 +2,14 @@
   <div id="wrapper">
     <div id="sidebar-wrapper">
       <div class="sidebar-nav">
-          <li class="sidebar-brand brandup" style="margin:10px">
+          <li class="sidebar-brand brandup">
               <a href="#">
-                  <h2>TEK<strong>TASK</strong></h2>
+                  <h2 class="text-center">TEK<strong>TASK</strong></h2>
               </a>
-          </li> 
+          </li>
     <draggable v-model="items" group="itemsSidebar" @start="drag=true" @end="drag=false">
-	    <div v-for="element in items" :key="element.title">
-        <hr>
-          <SessionSidebar :title="element.title" :iconTitle="element.iconTitle" :iconItem="element.iconItem" />
-        <hr>
+	    <div v-for="element in items" :key="element.title" class="div_session">
+          <hr><SessionSidebar :title="element.title" :iconTitle="element.iconTitle" :iconItem="element.iconItem" />
       </div>
   </draggable>
 	 </div>

@@ -15,6 +15,14 @@
     padding-left: 250px;
 }
 
+.div_session:hover {
+  background: #374051;
+}
+
+.brandup {
+  background: #1a2436;
+}
+
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -23,7 +31,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: rgba(0, 0, 0, 0.877);
+    background: #2a3342;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -54,7 +62,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    
+
 }
 
 .sidebar-nav li {
@@ -84,7 +92,7 @@
     height: 65px;
     font-size: 18px;
     line-height: 60px;
-    
+
 }
 
 .sidebar-nav > .sidebar-brand a {
