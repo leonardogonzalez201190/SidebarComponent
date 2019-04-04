@@ -1,7 +1,7 @@
 <template>
   <small>
     <hr class="th_sparetor">
-      <p class="text-white cursor-move font_ text-justify ml-5 h6">
+      <p class="text-white cursor-move font_ text-justify ml-4 h6">
         <span class="text-secondary" :class="iconTitle"></span>
        {{title}}</p>
     <hr class="th_sparetor">
@@ -9,13 +9,13 @@
     <input class="form-control form-control-sm" type="text" v-if="showInput" @keyup.13="increment" v-model="item_text" />
     <draggable v-model="items" @group="title" @start="drag=true" @end="drag=false">
       <div v-for="element in items" :key="element" class="item_session">
-        <a class="font_ text-justify mt-1 ml-5"><span :class="iconItem" class="mb-2 mt-2"></span>
+        <a class="font_ text-justify mt-1 ml-4"><span :class="iconItem" class="mb-2 mt-2"></span>
          <span class="text-white"> {{element}}</span>
         </a>
       </div>
     </draggable>
-    <p v-if="!items.length" class="text-secondary font_ text-justify ml-5">Empty list</p>
-    <button class="btn btn-outline-primary btn-sm mt-1 font_ text-justify ml-5" @click="showForm" :disabled="showInput">
+    <p v-if="!items.length" class="text-secondary font_ text-justify ml-4">Empty list</p>
+    <button class="btn btn-outline-primary btn-sm mt-1 font_ text-justify ml-4" @click="showForm" :disabled="showInput">
       <span class="fa fa-plus"></span> ADD {{title}}
     </button>
     <br class="mb-4">
