@@ -2,19 +2,19 @@
   <div id="wrapper">
     <div id="sidebar-wrapper">
       <div class="sidebar-nav">
-          <li class="sidebar-brand brandup">
-              <a href="#">
-                  <h2 class="text-center">TEK<strong>TASK</strong></h2>
-              </a>
-          </li>
-    <draggable v-model="items" group="itemsSidebar" @start="drag=true" @end="drag=false">
-	    <div v-for="element in items" :key="element.title" class="div_session text-center">
-          <hr><SessionSidebar :title="element.title" :iconTitle="element.iconTitle" :iconItem="element.iconItem" />
+        <li class="sidebar-brand brandup text-center">
+          <a href="#">
+            <h2><strong>TEK</strong>TASK</h2>
+          </a>
+        </li>
+        <draggable v-model="items" group="itemsSidebar" @start="drag=true" @end="drag=false">
+          <div v-for="element in items" :key="element.title" class="div_session ">
+            <SessionSidebar :title="element.title" :iconTitle="element.iconTitle" :iconItem="element.iconItem" />
+          </div>
+        </draggable>
       </div>
-  </draggable>
-	 </div>
-	      </div>
-		          </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -25,13 +25,13 @@ export default {
   name: 'Sidebar',
   components: {
     SessionSidebar,
-	draggable
-  },
+    draggable
+    },
   data() {
-	return {
-		items:[{title:"My Projects", iconTitle:"fa fa-credit-card", iconItem:"fa fa-star"},
-		{title:"Team", iconTitle:"fa fa-users", iconItem:"fa fa-user-friends"}]
-	}
-  },
-}
+    return {
+      items:[{title:"My Projects", iconTitle:"fa fa-credit-card", iconItem:"fa fa-star"},
+             {title:"Team", iconTitle:"fa fa-users", iconItem:"fa fa-user-friends"}]
+            }
+         },
+  }
 </script>
