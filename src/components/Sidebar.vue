@@ -2,9 +2,9 @@
   <div id="wrapper">
     <div id="sidebar-wrapper">
       <div class="sidebar-nav">
-        <li class="sidebar-brand brandup justify-content-center align-items-center text-light">
-          <a href="#" class="align-middle">
-            <h4 class="fa fa-users text-white"><strong> TEK</strong>TASK</h4>
+        <li class="sidebar-brand brandup">
+          <a href="#">
+            <h5 class="fas fa-fighter-jet text-light"> TEK<span class="text-secondary">TASK</span></h5>
           </a>
         </li>
         <draggable v-model="items" group="itemsSidebar" @start="drag=true" @end="drag=false">
