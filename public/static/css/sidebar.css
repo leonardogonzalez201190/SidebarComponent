@@ -76,7 +76,7 @@
     color: #999999;
 }
 
-.sidebar-nav a:hover {
+.sidebar-nav .item_session:hover {
     text-decoration: none;
     cursor: pointer;
     background: #355694;

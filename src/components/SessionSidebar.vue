@@ -1,19 +1,19 @@
 <template>
   <small>
 
-    <h5 class="text-white cursor-move font_"><span :class="iconTitle"></span> {{title}}</h5>
+    <h5 class="text-white cursor-move font_"><span :class="iconTitle"> {{title}}</span></h5>
 
-			<input class="form-control form-control-sm" type="text" v-if="showInput" @keyup.13="increment" v-model="item_text" />
+			<input class="form-control form-control-sm sm" type="text" v-if="showInput" @keyup.13="increment" v-model="item_text" />
 			<draggable v-model="items" @group="title" @start="drag=true" @end="drag=false">
-				<div v-for="element in items" :key="element" class="font_">
-					<a class="text-white m-2 font_"><span :class="iconItem"></span> {{element}}</a>
+				<div v-for="element in items" :key="element" class="item_session">
+					<a class="text-white font_ text-justify mt-1 ml-5"><span :class="iconItem"></span> {{element}}</a>
 				</div>
 			</draggable>
 	<p v-if="!items.length" class="text-secondary ">Empty list</p>
-	 <button class="btn btn-outline-primary btn-sm mt-2" @click="showForm" :disabled="showInput">
+	 <button class="btn btn-outline-primary btn-sm mt-1" @click="showForm" :disabled="showInput">
 	 <span class="fa fa-plus"></span> ADD {{title}}
 	 </button>
-	
+
   </small>
 </template>
 
