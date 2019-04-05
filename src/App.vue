@@ -1,17 +1,17 @@
 <template>
-	<div id="app">
-		<Sidebar/>
-	</div>
+    <div id="app">
+        <Sidebar/>
+    </div>
 </template>
 
 <script>
-import Sidebar from './components/Sidebar.vue'
+    import Sidebar from './components/Sidebar.vue'
 
-export default {
-  name: 'app',
-  components: {
-    Sidebar
-  }
-}
+    export default {
+        name: 'app',
+        components: {
+            Sidebar
+        }
+    }
 </script>
 

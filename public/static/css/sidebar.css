@@ -17,19 +17,19 @@
 
 .th_sparetor {
     background: #374051;
-    margin:0px 0px 3px 0px;
+    margin: 0px 0px 3px 0px;
 }
 
-.item_session:hover, .icon_sidebar:hover{
-  color:  #fff !important;
+.item_session:hover, .icon_sidebar:hover {
+    color: #fff !important;
 }
 
 .div_session:hover {
-  background: #374051;
+    background: #374051;
 }
 
 .brandup {
-  background: #1a2436;
+    background: #1a2436;
 }
 
 #sidebar-wrapper {
@@ -112,7 +112,7 @@
     background: none;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     #wrapper {
         padding-left: 250px;
     }
