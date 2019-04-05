@@ -17,7 +17,7 @@
             </div>
         </draggable>
         <p v-if="!items.length" class="text-secondary font_ text-justify ml-4">Empty list.</p>
-        <button class="btn btn-outline-primary btn-sm mt-1 font_ text-justify ml-4" @click="showForm"
+        <button class="btn btn-outline-secondary btn-sm mt-1 font_ text-justify ml-4" @click="showForm"
                 :disabled="showInput">
             <span class="fa fa-plus"></span> ADD {{title}}
         </button>
