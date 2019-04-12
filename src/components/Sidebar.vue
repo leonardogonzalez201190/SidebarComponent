@@ -4,7 +4,7 @@
             <div class="sidebar-nav">
                 <li class="sidebar-brand brandup">
                     <a href="#">
-                        <h5 class="fas fa-fighter-jet text-light"> TEK<span class="text-secondary">TASK</span></h5>
+                        <h5 class="fas fa-fighter-jet text-light"> <span>TEK</span>TASK</h5>
                     </a>
                 </li>
                 <draggable v-model="items" group="itemsSidebar" @start="drag=true" @end="drag=false">
@@ -31,7 +31,7 @@
         data() {
             return {
                 items: [{title: "My Projects", iconTitle: "fa fa-credit-card", iconItem: "fa fa-star"},
-                    {title: "Team", iconTitle: "fa fa-users", iconItem: "fa fa-user-friends"}]
+                        {title: "Team", iconTitle: "fa fa-users", iconItem: "fa fa-user-friends"}]
             }
         },
     }
