@@ -11,7 +11,7 @@
         <draggable v-model="items" @group="title" @start="drag=true" @end="drag=false">
             <div v-for="element in items" :key="element" class="item_session text-secondary">
                 <a class="font_ text-justify mt-1 ml-4">
-                    <span :class="iconItem" class="mb-2 mt-2 item_session"></span>
+                    <span :class="iconItem" class="mb-2 mt-2"></span>
                     <span class="text-white"> {{element}}</span>
                 </a>
             </div>
