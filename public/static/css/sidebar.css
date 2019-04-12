@@ -22,8 +22,10 @@
 
 .item_session:hover, .icon_sidebar:hover {
     color: #fff !important;
+    border-left: 1px solid #eee;
+    border-left-width: 1px;
+    border-radius: 1px;
 }
-
 
 .div_session:hover {
     background: #374051;
